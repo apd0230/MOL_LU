@@ -14,6 +14,9 @@ async def on_message(message):
     if message.content == '!사용법':
         await message.channel.send('```모르는 것이 있으면 몰?루를 출력합니다.\n몰?루 혹은 ㅁ?ㄹ를 입력하면 몰?루콘을 올립니다.```')
 
+    if message.content == '!개발언어':
+        await message.channel.send('```HTML```')
+
     if '몰?루' in message.content:
         await message.channel.send(file=discord.File('mollu.png'))
     elif 'ㅁ?ㄹ' in message.content:
