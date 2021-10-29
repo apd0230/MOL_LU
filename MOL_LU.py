@@ -17,12 +17,16 @@ async def on_message(message):
     if message.content == '!개발언어':
         await message.channel.send('```HTML```')
 
+    Q_Mark = ''
+    for i in range(message.content.count('?')):
+        Q_Mark += '몰?루 '
+
     if '몰?루' in message.content:
         await message.channel.send(file=discord.File('mollu.png'))
     elif 'ㅁ?ㄹ' in message.content:
         await message.channel.send(file=discord.File('mollu.png'))
     elif '?' in message.content:
-        await message.channel.send('몰?루')
+        await message.channel.send(Q_Mark)
     elif 'ㅁㄹ' in message.content:
         await message.channel.send('몰?루')
     elif '몰라' in message.content:
