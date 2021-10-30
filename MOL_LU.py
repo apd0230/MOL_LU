@@ -16,6 +16,10 @@ async def on_message(message):
 
     if message.content == '!개발언어':
         await message.channel.send('```HTML```')
+    if message.content == '!사용언어':
+        await message.channel.send('```HTML```')
+    if message.content == '!언어':
+        await message.channel.send('```HTML```')
     
     if message.content == '우컴':
         await message.channel.send('골1')
@@ -34,26 +38,40 @@ async def on_message(message):
         await message.channel.send('몰?루')
     elif '몰라' in message.content:
         await message.channel.send('몰?루')
-    elif '모르는' in message.content:
-        await message.channel.send('몰?루')
-    elif '모르겠' in message.content:
-        await message.channel.send('몰?루')
-    elif '모르네' in message.content:
-        await message.channel.send('몰?루')
-    elif '모르나' in message.content:
-        await message.channel.send('몰?루')
-    elif '모르냐' in message.content:
-        await message.channel.send('몰?루')
-    elif '모르지' in message.content:
-        await message.channel.send('몰?루')
     elif '모를' in message.content:
         await message.channel.send('몰?루')
-    elif '모르죠' in message.content:
-        await message.channel.send('몰?루')
+    elif '모르' in message.content:
+        if '아모르' in message.content:
+            return None
+        else: await message.channel.send('몰?루')
     elif '뭐' in message.content:
         await message.channel.send('몰?루')
     elif '뭔' in message.content:
         await message.channel.send('몰?루')
+    elif 'What' in message.content:
+        await message.channel.send('Don\'t?know')
+    elif 'what' in message.content:
+        await message.channel.send('Don\'t?know')
+    elif 'WHAT' in message.content:
+        await message.channel.send('Don\'t?know')
+    elif 'Why' in message.content:
+        await message.channel.send('Don\'t?know')
+    elif 'why' in message.content:
+        await message.channel.send('Don\'t?know')
+    elif 'WHY' in message.content:
+        await message.channel.send('Don\'t?know')
+    elif 'Where' in message.content:
+        await message.channel.send('Don\'t?know')
+    elif 'where' in message.content:
+        await message.channel.send('Don\'t?know')
+    elif 'WHERE' in message.content:
+        await message.channel.send('Don\'t?know')
+    elif 'How' in message.content:
+        await message.channel.send('Don\'t?know')
+    elif 'how' in message.content:
+        await message.channel.send('Don\'t?know')
+    elif 'HOW' in message.content:
+        await message.channel.send('Don\'t?know')
     elif '왜' in message.content:
         if '왜놈' in message.content:
             return None
@@ -61,6 +79,14 @@ async def on_message(message):
             return None
         elif '왜나라' in message.content:
             return None
+        else: await message.channel.send('몰?루')
+    elif '추천' in message.content:
+        if '아침' in message.content:
+            await message.channel.send('삼양라면')
+        elif '점심' in message.content:
+            await message.channel.send('민트초코')
+        elif '저녁' in message.content:
+            await message.channel.send('파인애플 피자')
         else: await message.channel.send('몰?루')
 
 token = ('OTAzMzI3NjY5NjcwODA1NTI2.YXrXcw.tV7JOHrjyfQgJ8npyd3-C5RWD4M')
