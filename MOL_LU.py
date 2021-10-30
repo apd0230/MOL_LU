@@ -43,6 +43,12 @@ async def on_message(message):
     elif '모르' in message.content:
         if '아모르' in message.content:
             return None
+        if '모르핀' in message.content:
+            return None
+        if '모르가나' in message.content:
+            return None
+        if '모르간' in message.content:
+            return None
         else: await message.channel.send('몰?루')
     elif '뭐' in message.content:
         await message.channel.send('몰?루')
