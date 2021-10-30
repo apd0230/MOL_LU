@@ -60,18 +60,6 @@ async def on_message(message):
         await message.channel.send('Don\'t?know')
     elif 'WHY' in message.content:
         await message.channel.send('Don\'t?know')
-    elif 'Where' in message.content:
-        await message.channel.send('Don\'t?know')
-    elif 'where' in message.content:
-        await message.channel.send('Don\'t?know')
-    elif 'WHERE' in message.content:
-        await message.channel.send('Don\'t?know')
-    elif 'How' in message.content:
-        await message.channel.send('Don\'t?know')
-    elif 'how' in message.content:
-        await message.channel.send('Don\'t?know')
-    elif 'HOW' in message.content:
-        await message.channel.send('Don\'t?know')
     elif '왜' in message.content:
         if '왜놈' in message.content:
             return None
