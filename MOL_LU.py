@@ -16,6 +16,9 @@ async def on_message(message):
 
     if message.content == '!개발언어':
         await message.channel.send('```HTML```')
+    
+    if message.content == '우컴':
+        await message.channel.send('골1')
 
     Q_Mark = ''
     for i in range(message.content.count('?')):
@@ -47,6 +50,16 @@ async def on_message(message):
         await message.channel.send('몰?루')
     elif '모르죠' in message.content:
         await message.channel.send('몰?루')
+    elif '뭐' in message.content:
+        await message.channel.send('몰?루')
+    elif '뭔' in message.content:
+        await message.channel.send('몰?루')
+    elif '왜' in message.content:
+        if '왜놈' in message.content:
+            return None
+        elif '왜건' in message.content:
+            return None
+        else: await message.channel.send('몰?루')
 
 token = ('OTAzMzI3NjY5NjcwODA1NTI2.YXrXcw.tV7JOHrjyfQgJ8npyd3-C5RWD4M')
 
