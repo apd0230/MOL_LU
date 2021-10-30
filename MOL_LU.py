@@ -59,6 +59,8 @@ async def on_message(message):
             return None
         elif '왜건' in message.content:
             return None
+        elif '왜나라' in message.content:
+            return None
         else: await message.channel.send('몰?루')
 
 token = ('OTAzMzI3NjY5NjcwODA1NTI2.YXrXcw.tV7JOHrjyfQgJ8npyd3-C5RWD4M')
