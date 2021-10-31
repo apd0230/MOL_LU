@@ -60,6 +60,10 @@ async def on_message(message):
         else: await message.channel.send('Don\'t?know')
     elif '?' in message.content:
         await message.channel.send(Q_Mark)
+    elif '누구' in message.content:
+        await message.channel.send('몰?루')
+    elif '어디' in message.content:
+        await message.channel.send('몰?루')
     elif 'ㅁㄹ' in message.content:
         await message.channel.send('몰?루')
     elif '몰라' in message.content:
