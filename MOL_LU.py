@@ -27,11 +27,39 @@ async def on_message(message):
     Q_Mark = ''
     for i in range(message.content.count('?')):
         Q_Mark += '몰?루 '
+    
+    E_Q_Mark = ''
+    for i in range(message.content.count('?')):
+        E_Q_Mark += 'Don\'t?know '
 
     if '몰?루' in message.content:
         await message.channel.send(file=discord.File('mollu.png'))
     elif 'ㅁ?ㄹ' in message.content:
         await message.channel.send(file=discord.File('mollu.png'))
+    elif message.content.startswith('What'):
+        if '?' in message.content:
+            await message.channel.send(E_Q_Mark)
+        else: await message.channel.send('Don\'t?know')
+    elif message.content.startswith('what'):
+        if '?' in message.content:
+            await message.channel.send(E_Q_Mark)
+        else: await message.channel.send('Don\'t?know')
+    elif message.content.startswith('WHAT'):
+        if '?' in message.content:
+            await message.channel.send(E_Q_Mark)
+        else: await message.channel.send('Don\'t?know')
+    elif message.content.startswith('Why'):
+        if '?' in message.content:
+            await message.channel.send(E_Q_Mark)
+        else: await message.channel.send('Don\'t?know')
+    elif message.content.startswith('why'):
+        if '?' in message.content:
+            await message.channel.send(E_Q_Mark)
+        else: await message.channel.send('Don\'t?know')
+    elif message.content.startswith('WHY'):
+        if '?' in message.content:
+            await message.channel.send(E_Q_Mark)
+        else: await message.channel.send('Don\'t?know')
     elif '?' in message.content:
         await message.channel.send(Q_Mark)
     elif 'ㅁㄹ' in message.content:
@@ -54,18 +82,6 @@ async def on_message(message):
         await message.channel.send('몰?루')
     elif '뭔' in message.content:
         await message.channel.send('몰?루')
-    elif 'What' in message.content:
-        await message.channel.send('Don\'t?know')
-    elif 'what' in message.content:
-        await message.channel.send('Don\'t?know')
-    elif 'WHAT' in message.content:
-        await message.channel.send('Don\'t?know')
-    elif 'Why' in message.content:
-        await message.channel.send('Don\'t?know')
-    elif 'why' in message.content:
-        await message.channel.send('Don\'t?know')
-    elif 'WHY' in message.content:
-        await message.channel.send('Don\'t?know')
     elif '왜' in message.content:
         if '왜놈' in message.content:
             return None
@@ -82,6 +98,8 @@ async def on_message(message):
         elif '저녁' in message.content:
             await message.channel.send('파인애플 피자')
         else: await message.channel.send('몰?루')
+    elif message.content.endswith('냐'):
+        await message.channel.send('몰?루')
 
 token = ('OTAzMzI3NjY5NjcwODA1NTI2.YXrXcw.tV7JOHrjyfQgJ8npyd3-C5RWD4M')
 
