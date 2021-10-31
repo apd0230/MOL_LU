@@ -25,11 +25,9 @@ async def on_message(message):
         await message.channel.send('골1')
 
     Q_Mark = ''
-    for i in range(message.content.count('?')):
-        Q_Mark += '몰?루 '
-    
     E_Q_Mark = ''
     for i in range(message.content.count('?')):
+        Q_Mark += '몰?루 '
         E_Q_Mark += 'Don\'t?know '
 
     if '몰?루' in message.content:
