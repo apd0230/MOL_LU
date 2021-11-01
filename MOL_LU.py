@@ -100,6 +100,18 @@ async def on_message(message):
         await message.channel.send('몰?루')
     elif '왤케' in message.content:
         await message.channel.send('몰?루')
+    elif '어쩌' in message.content:
+        await message.channel.send('몰?루')
+    elif '어째' in message.content:
+        await message.channel.send('몰?루')
+    elif '어찌' in message.content:
+        await message.channel.send('몰?루')
+    elif '저쩌' in message.content:
+        await message.channel.send('몰?루')
+    elif '저째' in message.content:
+        await message.channel.send('몰?루')
+    elif '저찌' in message.content:
+        await message.channel.send('몰?루')
     elif '추천' in message.content:
         if '아침' in message.content:
             await message.channel.send('삼양라면')
