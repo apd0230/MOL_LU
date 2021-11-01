@@ -80,6 +80,10 @@ async def on_message(message):
         if '모르간' in message.content:
             return None
         else: await message.channel.send('몰?루')
+    elif '그럴' in message.content:
+        await message.channel.send('몰?루')
+    elif '아닐' in message.content:
+        await message.channel.send('몰?루')
     elif '뭐' in message.content:
         await message.channel.send('몰?루')
     elif '뭔' in message.content:
@@ -101,6 +105,10 @@ async def on_message(message):
             await message.channel.send('파인애플 피자')
         else: await message.channel.send('몰?루')
     elif message.content.endswith('냐'):
+        await message.channel.send('몰?루')
+    elif message.content.endswith('그런가'):
+        await message.channel.send('몰?루')
+    elif message.content.endswith('아닌가'):
         await message.channel.send('몰?루')
 
 token = ('OTAzMzI3NjY5NjcwODA1NTI2.YXrXcw.tV7JOHrjyfQgJ8npyd3-C5RWD4M')
