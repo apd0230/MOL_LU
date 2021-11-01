@@ -96,6 +96,10 @@ async def on_message(message):
         elif '왜나라' in message.content:
             return None
         else: await message.channel.send('몰?루')
+    elif '왤까' in message.content:
+        await message.channel.send('몰?루')
+    elif '왤케' in message.content:
+        await message.channel.send('몰?루')
     elif '추천' in message.content:
         if '아침' in message.content:
             await message.channel.send('삼양라면')
