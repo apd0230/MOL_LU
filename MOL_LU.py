@@ -105,7 +105,9 @@ async def on_message(message):
             await message.channel.send('파인애플 피자')
         else: await message.channel.send('몰?루')
     elif message.content.endswith('냐'):
-        await message.channel.send('몰?루')
+        if message.content.startswith('냐'):
+            return None
+        else: await message.channel.send('몰?루')
     elif message.content.endswith('그런가'):
         await message.channel.send('몰?루')
     elif message.content.endswith('아닌가'):
