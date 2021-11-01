@@ -80,9 +80,21 @@ async def on_message(message):
         if '모르간' in message.content:
             return None
         else: await message.channel.send('몰?루')
-    elif '그럴' in message.content:
+    elif '그럴 걸' in message.content:
         await message.channel.send('몰?루')
-    elif '아닐' in message.content:
+    elif '아닐 걸' in message.content:
+        await message.channel.send('몰?루')
+    elif '그럴 껄' in message.content:
+        await message.channel.send('몰?루')
+    elif '아닐 껄' in message.content:
+        await message.channel.send('몰?루')
+    elif '그럴걸' in message.content:
+        await message.channel.send('몰?루')
+    elif '아닐걸' in message.content:
+        await message.channel.send('몰?루')
+    elif '그럴껄' in message.content:
+        await message.channel.send('몰?루')
+    elif '아닐껄' in message.content:
         await message.channel.send('몰?루')
     elif '뭐' in message.content:
         await message.channel.send('몰?루')
@@ -127,6 +139,8 @@ async def on_message(message):
     elif message.content.endswith('그런가'):
         await message.channel.send('몰?루')
     elif message.content.endswith('아닌가'):
+        await message.channel.send('몰?루')
+    elif message.content.endswith('듯'):
         await message.channel.send('몰?루')
 
 token = ('OTAzMzI3NjY5NjcwODA1NTI2.YXrXcw.tV7JOHrjyfQgJ8npyd3-C5RWD4M')
