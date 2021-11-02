@@ -34,6 +34,10 @@ async def on_message(message):
         await message.channel.send(file=discord.File('mollu.png'))
     elif 'ㅁ?ㄹ' in message.content:
         await message.channel.send(file=discord.File('mollu.png'))
+    elif '몰루?' in message.content:
+        await message.channel.send(file=discord.File('mollu.png'))
+    elif '몰루' in message.content:
+        await message.channel.send(file=discord.File('mollu.png'))
     elif message.content.startswith('What'):
         if '?' in message.content:
             await message.channel.send(E_Q_Mark)
