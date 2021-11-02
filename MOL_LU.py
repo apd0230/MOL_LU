@@ -34,8 +34,6 @@ async def on_message(message):
         await message.channel.send(file=discord.File('mollu.png'))
     elif 'ㅁ?ㄹ' in message.content:
         await message.channel.send(file=discord.File('mollu.png'))
-    elif '몰루?' in message.content:
-        await message.channel.send(file=discord.File('mollu.png'))
     elif '몰루' in message.content:
         await message.channel.send(file=discord.File('mollu.png'))
     elif message.content.startswith('What'):
@@ -73,6 +71,8 @@ async def on_message(message):
     elif '몰라' in message.content:
         await message.channel.send('몰?루')
     elif '모를' in message.content:
+        await message.channel.send('몰?루')
+    elif '모름' in message.content:
         await message.channel.send('몰?루')
     elif '모르' in message.content:
         if '아모르' in message.content:
