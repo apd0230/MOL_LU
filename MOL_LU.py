@@ -104,6 +104,8 @@ async def on_message(message):
         await message.channel.send('몰?루')
     elif '뭔' in message.content:
         await message.channel.send('몰?루')
+    elif message.content == '머임':
+        await message.channel.send('몰?루')
     elif '왜' in message.content:
         if '왜놈' in message.content:
             return None
@@ -138,7 +140,9 @@ async def on_message(message):
         else: await message.channel.send('몰?루')
     elif message.content.endswith('냐'):
         if message.content.startswith('냐'):
-            return None
+            if message.content.endswith('ㅋ'):
+                await message.cannel.send('몰?루')
+            else: return None
         else: await message.channel.send('몰?루')
     elif message.content.endswith('그런가'):
         await message.channel.send('몰?루')
