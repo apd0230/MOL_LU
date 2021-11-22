@@ -23,6 +23,8 @@ async def on_message(message):
     
     if message.content == '우컴':
         await message.channel.send('골1')
+    if message.content == '!테디베어':
+        await message.channel.send('전역 절대 못 함')
 
     Q_Mark = ''
     E_Q_Mark = ''
