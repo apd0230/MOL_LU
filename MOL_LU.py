@@ -38,25 +38,25 @@ async def on_message(message):
         await message.channel.send(file=discord.File('mollu.png'))
     elif '몰루' in message.content:
         await message.channel.send(file=discord.File('mollu.png'))
-    if '믈?루' in message.content:
+    elif '믈?루' in message.content:
         await message.channel.send(file=discord.File('mollu.png'))
-    if '믈?르' in message.content:
+    elif '믈?르' in message.content:
         await message.channel.send(file=discord.File('mollu.png'))
-    if '몰?르' in message.content:
+    elif '몰?르' in message.content:
         await message.channel.send(file=discord.File('mollu.png'))
-    if '믈루' in message.content:
+    elif '믈루' in message.content:
         await message.channel.send(file=discord.File('mollu.png'))
-    if '믈르' in message.content:
+    elif '믈르' in message.content:
         await message.channel.send(file=discord.File('mollu.png'))
-    if '몰르' in message.content:
+    elif '몰르' in message.content:
         await message.channel.send(file=discord.File('mollu.png'))
-    if '멀?루' in message.content:
+    elif '멀?루' in message.content:
         await message.channel.send(file=discord.File('mollu.png'))
-    if '멀?르' in message.content:
+    elif '멀?르' in message.content:
         await message.channel.send(file=discord.File('mollu.png'))
-    if '멀루' in message.content:
+    elif '멀루' in message.content:
         await message.channel.send(file=discord.File('mollu.png'))
-    if '멀르' in message.content:
+    elif '멀르' in message.content:
         await message.channel.send(file=discord.File('mollu.png'))
     elif message.content.startswith('What'):
         if '?' in message.content:
