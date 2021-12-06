@@ -83,7 +83,7 @@ async def on_message(message):
             await message.channel.send(E_Q_Mark)
         else: await message.channel.send('Don\'t?know')
     elif '?' in message.content:
-        if 'https://' in message.content:
+        if 'http' and '://' in message.content:
             return None
         else: await message.channel.send(Q_Mark)
     elif '누구' in message.content:
