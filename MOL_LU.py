@@ -33,31 +33,31 @@ async def on_message(message):
         E_Q_Mark += 'Don\'t?know '
 
     if '몰?루' in message.content:
-        await message.channel.send(file=discord.File('mollu.png'))
+        await message.channel.send(file=discord.File('몰루.gif'))
     elif 'ㅁ?ㄹ' in message.content:
-        await message.channel.send(file=discord.File('mollu.png'))
+        await message.channel.send(file=discord.File('몰루.gif'))
     elif '몰루' in message.content:
-        await message.channel.send(file=discord.File('mollu.png'))
+        await message.channel.send(file=discord.File('몰루.gif'))
     elif '믈?루' in message.content:
-        await message.channel.send(file=discord.File('mollu.png'))
+        await message.channel.send(file=discord.File('몰루.gif'))
     elif '믈?르' in message.content:
-        await message.channel.send(file=discord.File('mollu.png'))
+        await message.channel.send(file=discord.File('몰루.gif'))
     elif '몰?르' in message.content:
-        await message.channel.send(file=discord.File('mollu.png'))
+        await message.channel.send(file=discord.File('몰루.gif'))
     elif '믈루' in message.content:
-        await message.channel.send(file=discord.File('mollu.png'))
+        await message.channel.send(file=discord.File('몰루.gif'))
     elif '믈르' in message.content:
-        await message.channel.send(file=discord.File('mollu.png'))
+        await message.channel.send(file=discord.File('몰루.gif'))
     elif '몰르' in message.content:
-        await message.channel.send(file=discord.File('mollu.png'))
+        await message.channel.send(file=discord.File('몰루.gif'))
     elif '멀?루' in message.content:
-        await message.channel.send(file=discord.File('mollu.png'))
+        await message.channel.send(file=discord.File('몰루.gif'))
     elif '멀?르' in message.content:
-        await message.channel.send(file=discord.File('mollu.png'))
+        await message.channel.send(file=discord.File('몰루.gif'))
     elif '멀루' in message.content:
-        await message.channel.send(file=discord.File('mollu.png'))
+        await message.channel.send(file=discord.File('몰루.gif'))
     elif '멀르' in message.content:
-        await message.channel.send(file=discord.File('mollu.png'))
+        await message.channel.send(file=discord.File('몰루.gif'))
     elif message.content.startswith('What'):
         if '?' in message.content:
             await message.channel.send(E_Q_Mark)
