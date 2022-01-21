@@ -28,7 +28,13 @@ async def on_message(message):
 
     Q_Mark = ''
     E_Q_Mark = ''
-    for i in range(message.content.count('?' and '¿')):
+    R_Q_Mark = ''
+    R_E_Q_Mark = ''
+
+    for i in range(message.content.count('?')):
+        Q_Mark += '몰?루 '
+        E_Q_Mark += 'Don\'t?know '
+    for i in range(message.content.count('¿')):
         Q_Mark += '몰?루 '
         E_Q_Mark += 'Don\'t?know '
 
@@ -58,31 +64,31 @@ async def on_message(message):
         await message.channel.send(file=discord.File('몰루.gif'))
     elif '멀르' in message.content:
         await message.channel.send(file=discord.File('몰루.gif'))
-    elif message.content.startswith('What'):
-        if '?' in message.content:
+    elif 'What' in message.content:
+        if '?' or '¿' in message.content:
             await message.channel.send(E_Q_Mark)
         else: await message.channel.send('Don\'t?know')
-    elif message.content.startswith('what'):
-        if '?' in message.content:
+    elif 'what' in message.content:
+        if '?' or '¿' in message.content:
             await message.channel.send(E_Q_Mark)
         else: await message.channel.send('Don\'t?know')
-    elif message.content.startswith('WHAT'):
-        if '?' in message.content:
+    elif 'WHAT' in message.content:
+        if '?' or '¿' in message.content:
             await message.channel.send(E_Q_Mark)
         else: await message.channel.send('Don\'t?know')
-    elif message.content.startswith('Why'):
-        if '?' in message.content:
+    elif 'Why' in message.content:
+        if '?' or '¿' in message.content:
             await message.channel.send(E_Q_Mark)
         else: await message.channel.send('Don\'t?know')
-    elif message.content.startswith('why'):
-        if '?' in message.content:
+    elif 'why' in message.content:
+        if '?' or '¿' in message.content:
             await message.channel.send(E_Q_Mark)
         else: await message.channel.send('Don\'t?know')
-    elif message.content.startswith('WHY'):
-        if '?' in message.content:
+    elif 'WHY' in message.content:
+        if '?' or '¿' in message.content:
             await message.channel.send(E_Q_Mark)
         else: await message.channel.send('Don\'t?know')
-    elif '?' in message.content:
+    elif '?' or '¿' in message.content:
         if 'http' and '://' in message.content:
             return None
         else: await message.channel.send(Q_Mark)
