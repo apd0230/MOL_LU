@@ -28,7 +28,7 @@ async def on_message(message):
 
     Q_Mark = ''
     E_Q_Mark = ''
-    for i in range(message.content.count('?')):
+    for i in range(message.content.count('?' and '¿')):
         Q_Mark += '몰?루 '
         E_Q_Mark += 'Don\'t?know '
 
