@@ -1,5 +1,10 @@
 import discord
 
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
 mollu = discord.Client()
 
 @mollu.event
@@ -39,31 +44,31 @@ async def on_message(message):
         R_E_Q_Mark += 'Don\'t?know '
 
     if '몰?루' in message.content:
-        await message.channel.send(file=discord.File('몰루.gif'))
+        await message.channel.send(file=discord.File('E:/vsc/MOL_LU/몰루.gif'))
     elif 'ㅁ?ㄹ' in message.content:
-        await message.channel.send(file=discord.File('몰루.gif'))
+        await message.channel.send(file=discord.File('E:/vsc/MOL_LU/몰루.gif'))
     elif '몰루' in message.content:
-        await message.channel.send(file=discord.File('몰루.gif'))
+        await message.channel.send(file=discord.File('E:/vsc/MOL_LU/몰루.gif'))
     elif '믈?루' in message.content:
-        await message.channel.send(file=discord.File('몰루.gif'))
+        await message.channel.send(file=discord.File('E:/vsc/MOL_LU/몰루.gif'))
     elif '믈?르' in message.content:
-        await message.channel.send(file=discord.File('몰루.gif'))
+        await message.channel.send(file=discord.File('E:/vsc/MOL_LU/몰루.gif'))
     elif '몰?르' in message.content:
-        await message.channel.send(file=discord.File('몰루.gif'))
+        await message.channel.send(file=discord.File('E:/vsc/MOL_LU/몰루.gif'))
     elif '믈루' in message.content:
-        await message.channel.send(file=discord.File('몰루.gif'))
+        await message.channel.send(file=discord.File('E:/vsc/MOL_LU/몰루.gif'))
     elif '믈르' in message.content:
-        await message.channel.send(file=discord.File('몰루.gif'))
+        await message.channel.send(file=discord.File('E:/vsc/MOL_LU/몰루.gif'))
     elif '몰르' in message.content:
-        await message.channel.send(file=discord.File('몰루.gif'))
+        await message.channel.send(file=discord.File('E:/vsc/MOL_LU/몰루.gif'))
     elif '멀?루' in message.content:
-        await message.channel.send(file=discord.File('몰루.gif'))
+        await message.channel.send(file=discord.File('E:/vsc/MOL_LU/몰루.gif'))
     elif '멀?르' in message.content:
-        await message.channel.send(file=discord.File('몰루.gif'))
+        await message.channel.send(file=discord.File('E:/vsc/MOL_LU/몰루.gif'))
     elif '멀루' in message.content:
-        await message.channel.send(file=discord.File('몰루.gif'))
+        await message.channel.send(file=discord.File('E:/vsc/MOL_LU/몰루.gif'))
     elif '멀르' in message.content:
-        await message.channel.send(file=discord.File('몰루.gif'))
+        await message.channel.send(file=discord.File('E:/vsc/MOL_LU/몰루.gif'))
     elif 'What' in message.content:
         if '?' in message.content:
             await message.channel.send(E_Q_Mark)
@@ -202,6 +207,4 @@ async def on_message(message):
     elif message.content.endswith('듯'):
         await message.channel.send('몰?루')
 
-token = ('OTAzMzI3NjY5NjcwODA1NTI2.YXrXcw.tV7JOHrjyfQgJ8npyd3-C5RWD4M')
-
-mollu.run(token)
+mollu.run(os.getenv("TOKEN"))
